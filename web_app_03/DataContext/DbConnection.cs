@@ -11,7 +11,7 @@ namespace web_app_03.DataContext
 {
     public class DbConnection
     {
-        NpgsqlConnection connection = new NpgsqlConnection("Server=0.00.00.000;Port=5432;User Id=webapp;Password=12345678;Database=librarydb;");
+        NpgsqlConnection connection = new NpgsqlConnection("Server=0.00.00.000;Port=5432;User Id=user;Password=12345678;Database=librarydb;");
 
         //public DbSet<ClientModel> ClientObj { get; set; }
         public void openConnection()
