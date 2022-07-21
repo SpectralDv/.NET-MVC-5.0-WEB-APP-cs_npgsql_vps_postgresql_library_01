@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "DeleteBook";
+}
+
+<h1>DeleteBook</h1>
+
+<form action="/Book/FormDeleteBook" method="post">
+    <p>
+        PKey Book
+    </p>
+    <input type="number" name="intIdBook" placeholder="ПКлюч книги"/>
+    <p>
+        Name
+    </p>
+    <input type="text" name="strBookName" placeholder="Название книги"/>
+
+    <input type="submit" value="DeleteBook" />
+</form>

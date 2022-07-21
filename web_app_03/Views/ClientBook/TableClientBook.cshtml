@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "TableClientBook";
+}
+
+<h1>TableClientBook</h1>
+
+<div class="card col-md-12">
+
+    <table class="table">
+        <thead>
+            <th>PKey</th>
+            <th>PKBook</th>
+            <th>PKClient</th>
+            <th>NameBook</>
+            <th>NameClient</th>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id </td>
+                <td>@item.IdBook</td>
+                <td>@item.IdClient</td>
+                <td>@item.NameBook</td>
+                <td>@item.NameClient</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <p>
+    </p>
+    <p>
+    </p>
+</div>

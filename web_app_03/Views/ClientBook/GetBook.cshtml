@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "GetBook";
+}
+
+<h1>GetBook(Выдать книгу)</h1>
+
+<form action="/ClientBook/FormGetBook" method="post">
+    <lable>
+        NameBook
+    </lable>
+        <input type="text" name="nameBook" placeholder="Название книги"/>
+    <br>
+    <br>
+    <lable>
+        NameClient
+    </lable>
+        <input type="text" name="nameClient" placeholder="Логин клиента"/>
+    <br>
+    <br>
+    <input type="submit" value="GetBook" />
+</form>

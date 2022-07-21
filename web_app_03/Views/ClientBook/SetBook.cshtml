@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "SetBook";
+}
+
+<h1>SetBook(Вернуть книгу)</h1>
+
+<form action="/ClientBook/FormSetBook" method="post">
+    <lable>
+        NameBook
+    </lable>
+    <input type="text" name="nameBook" placeholder="Название книги"/>
+    <br>
+    <br>
+    <lable>
+        NameClient
+    </lable>
+    <input type="text" name="nameClient" placeholder="Логин клиента"/>
+    <br>
+    <br>
+    <input type="submit" value="SetBook" />
+</form>

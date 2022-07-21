@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "AddClient";
+}
+
+<h1>AddClient</h1>
+
+<form action="/Client/FormAddClient" method="post">
+    <asp:label>
+        Login
+    <input type="text" name="strLogin" placeholder="Придумайте логин"/>
+    <!--<input type="checkbox" name="checkboxData" />-->
+    <!--<input type="number" name="textBoxIntData" />-->
+    </asp:label>
+
+    <input type="submit" value="AddClient" />
+</form>

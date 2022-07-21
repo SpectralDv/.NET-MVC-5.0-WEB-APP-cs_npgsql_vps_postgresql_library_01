@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "EditBook";
+}
+
+<h1>EditBook</h1>
+
+<form action="/Book/FormEditDescriptionBook" method="post">
+    <table>
+        <label> 
+            NameBook
+        <input type="text" name="strBookName" placeholder="Название книги"/>
+        </label>
+        <br>
+        <br>
+        <label> 
+            Description
+            <textarea type="text" name="strDescription" cols="30" rows="10" placeholder="Описание книги"></textarea>
+        </label>
+        <br>
+        <br>
+        <label> 
+            <input type="submit" value="EditBook" />
+        </label>
+    </table>
+</form>

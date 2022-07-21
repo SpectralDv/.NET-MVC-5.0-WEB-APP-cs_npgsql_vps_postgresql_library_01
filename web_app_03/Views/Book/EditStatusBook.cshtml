@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "EditStatusBook";
+}
+
+<h1>EditStatusBook</h1>
+
+<form class="class-form" action="/Book/FormEditStatusBook" method="post">
+    <table>
+        <lable>
+            NameBook
+        </lable>
+        <input class="class-btn" type="text" name="strBookName" placeholder="Название книги"/>
+        <br>
+        <br>
+        <lable>
+            StatusBook
+        </lable>
+        <input class="class-btn" type="number" name="intStatus" placeholder="Введите 0 или 1"/>
+        <br>
+        <br>
+        <lable>
+        <input class="class-btn" type="submit" value="EditStatusBook" />
+        </lable>
+    </table>
+</form>

@@ -1,0 +1,37 @@
+﻿
+@using web_app_03.Models;
+@model List<BookModel>;
+
+@{
+    ViewData["Title"] = "TableBook";
+}
+
+<h1>TableBook</h1>
+
+<div class="card col-md-12">
+
+    <table class="table">
+        <thead>
+            <th>PKey</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id </td>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Status</td>
+            </tr>
+        }
+        <tbody>
+    </table>
+    <p>
+    </p>
+    <p>
+    </p>
+</div>
+

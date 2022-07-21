@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "AddBook";
+}
+
+<h1>AddBook(добавить книгу)</h1>
+
+<form action="/Book/FormAddBook" method="post">
+    <table>
+        <label> 
+            NameBook
+            <input type="text" name="strBookName" placeholder="Название книги"/>
+        </label>     
+        <br>
+        <br>
+        <label> 
+            Description
+            <textarea type="text" name="strDescription" cols="30" rows="10" placeholder="Описание книги"></textarea>
+        </label>
+        <br>
+        <br>
+        <label> 
+            <input type="submit" value="AddBook" />
+        </label>
+        <br>
+        <br>
+    </table>
+</form>

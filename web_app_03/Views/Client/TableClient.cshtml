@@ -1,0 +1,29 @@
+﻿
+@using web_app_03.Models;
+@model List<ClientModel>;
+
+@{
+    ViewData["Title"] = "IndexClient";
+}
+
+<h1>TableClient</h1>
+<div class="card col-md-12">
+
+    <table class="table">
+        <thead>
+            <td>PKey</td>
+            <td></td>
+            <td>Login</td>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id </td>
+                <td></td>
+                <td>@item.Login</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
